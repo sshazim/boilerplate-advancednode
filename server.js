@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.set('view engine', 'pug')
 
-app.route('views/pug').get((req, res) => {
+app.route('/views/pug').get((req, res) => {
   res.render('Load your view here');
 });
 
