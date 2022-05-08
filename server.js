@@ -12,8 +12,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.set('view engine', 'pug')
 
-app.route('/views/pug').get((req, res) => {
-  res.render('Load your view here');
+app.route('/').get((req, res) => {
+  res.render('views/pug');
 });
 
 const PORT = process.env.PORT || 3000;
